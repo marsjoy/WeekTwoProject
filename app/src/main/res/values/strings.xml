@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Fake News</string>
+    <string name="app_label">Search Fake News</string>
+    <string name="search_hint">Search</string>
+    <string name="search_title">Search</string>
+    <string name="settings_label">Settings</string>
+    <string name="hint_begin_date">Begin Date</string>
+    <string name="hint_sort_order">Sort Order</string>
+    <string name="news_desk">News Desk</string>
+    <string name="label_arts">Arts</string>
+    <string name="label_fashion_style"><![CDATA[Fashion & Style]]></string>
+    <string name="label_sports">Sports</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_save">Save</string>
+    <string name="label_share">Share</string>
+    <string name="sharedpref_file_name">settings</string>
+    <string name="key_begin_date">begin_date</string>
+    <string name="label_newest">Newest</string>
+    <string name="label_oldest">Oldest</string>
+    <string name="key_sort_order">sort</string>
+    <string name="key_checkbox_arts">checkbox_arts_key</string>
+    <string name="key_checkbox_fashion">checkbox_fashion_key</string>
+    <string name="key_checkbox_sports">checkbox_sports_key</string>
+    <string name="key_query_string">q</string>
+    <string name="key_filter_query">fq</string>
+    <string name="key_api_key">api-key</string>
+    <string name="key_page_number">page</string>
+    <string name="key_filter_lines">fl</string>
+    <string name="image_base_url">https://www.nytimes.com/</string>
+    <string name="snackbar_text_internet_lost">Disconnected from Internet</string>
+    <string name="snackbar_text_internet_available">Connected to Internet</string>
+    <string name="label_use_chrome_tabs">Use Chrome Tabs</string>
+    <string name="key_chrome_tab">chrome_tab_key</string>
+    <string name="tool_text_headline">headline</string>
+    <string name="tool_text_synopsis">synopsis</string>
+    <string name="max_lines">3</string>
+</resources>

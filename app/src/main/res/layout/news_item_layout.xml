@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+<RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_border"
+                android:layout_margin="@dimen/item_grid_margin"
+                android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/iv_news_thumbnail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/text_top_margin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_headline"
+            android:layout_below="@id/iv_news_thumbnail"
+            tools:text="@string/tool_text_headline"
+            android:layout_marginTop="@dimen/text_top_margin"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_news_synopsis"
+            android:layout_below="@id/tv_headline"
+            tools:text="@string/tool_text_synopsis"
+            android:layout_marginTop="@dimen/text_top_margin"
+            android:maxLines="@string/max_lines"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_news_desk"
+            android:layout_below="@id/tv_news_synopsis"
+            tools:text="@string/label_sports"
+            android:textAllCaps="true"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:padding="@dimen/news_desk_text_padding"
+            android:layout_marginTop="@dimen/text_top_margin"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</layout>

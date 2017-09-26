@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dialog_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_heading">
+
+            <ImageView
+                android:layout_width="@dimen/settings_image_width"
+                android:layout_height="@dimen/settings_image_height"
+                android:src="@drawable/ic_settings_black_24dp"
+                android:id="@+id/iv_icon"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iv_icon"
+                android:text="@string/settings_label"
+                android:textSize="@dimen/text_size_heading"
+                android:padding="@dimen/text_padding"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorAccent"/>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_heading"
+            android:id="@+id/til_begin_date"
+            android:layout_marginTop="@dimen/title_margin">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_begin_date"
+                android:hint="@string/hint_begin_date"
+                android:focusable="false"
+                android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/til_begin_date"
+            android:id="@+id/til_sort_order">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_sort_order"
+                android:focusable="false"
+                android:hint="@string/hint_sort_order"
+                android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_news_desk"
+            android:text="@string/news_desk"
+            android:layout_below="@id/til_sort_order"
+            android:textColor="@color/colorAccent"
+            android:padding="@dimen/text_padding"
+            android:layout_marginTop="@dimen/text_top_margin"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_arts"
+            android:text="@string/label_arts"
+            android:layout_below="@id/tv_news_desk"
+            android:drawablePadding="@dimen/icon_margin"
+            android:drawableStart="@drawable/ic_arts"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_fashion_style"
+            android:text="@string/label_fashion_style"
+            android:layout_below="@id/cb_arts"
+            android:drawablePadding="@dimen/icon_margin"
+            android:drawableStart="@drawable/ic_fashion"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_sports"
+            android:text="@string/label_sports"
+            android:layout_below="@id/cb_fashion_style"
+            android:drawablePadding="@dimen/icon_margin"
+            android:drawableStart="@drawable/ic_sports"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_use_chrome_tabs"
+            android:layout_below="@id/cb_sports"
+            android:layout_marginTop="@dimen/text_top_margin"
+            android:id="@+id/tv_use_chrome"
+            android:textColor="@color/colorAccent"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cb_sports"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/switch_chrome_tab"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_cancel"
+            android:id="@+id/btn_cancel"
+            style="?android:borderlessButtonStyle"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@id/tv_use_chrome"
+            android:layout_toStartOf="@+id/btn_save"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_save"
+            android:layout_below="@id/tv_use_chrome"
+            android:id="@+id/btn_save"
+            android:layout_alignParentEnd="true"
+            style="?android:borderlessButtonStyle"
+            android:textColor="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</ScrollView>
+
+</layout>

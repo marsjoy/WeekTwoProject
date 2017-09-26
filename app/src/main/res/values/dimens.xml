@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_margin">16dp</dimen>
+    <dimen name="text_size_heading">24sp</dimen>
+    <dimen name="text_padding">5dp</dimen>
+    <dimen name="title_margin">16dp</dimen>
+    <dimen name="text_top_margin">8dp</dimen>
+    <dimen name="item_grid_margin">5dp</dimen>
+    <dimen name="news_desk_text_padding">4dp</dimen>
+    <dimen name="elevation">4dp</dimen>
+    <dimen name="icon_margin">3dp</dimen>
+    <dimen name="settings_image_width">30dp</dimen>
+    <dimen name="settings_image_height">30dp</dimen>
+</resources>
